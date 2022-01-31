@@ -1,0 +1,243 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" ,sans-serif;
+}
+body{
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width:20vw;
+    height:fit-content;
+}
+h1{
+    color: black;
+    font-weight: bold;
+
+}
+/* .header {
+    display: flex;
+} */
+.close{
+    font-size: 2em;
+    cursor: pointer;
+    position:fixed;
+    top:21px;
+    left: 170px;
+}
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 212, 29);
+    overflow-x: hidden;
+    padding-top: 100px;
+    color: white;
+    transition:0.5s ;
+}
+ .sidebar li{
+    border-bottom-left-radius: 30px;
+    border-top-left-radius:30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+} 
+.sidebar li:hover{
+    transition: 0.3s;
+    background:white;
+    color: black;
+}
+.sidebar ul ion-icon{
+    padding-right: 5px;
+    font-size:30px;
+}
+.sidebar small{
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    margin-bottom: 5px;
+}
+.active{
+    background-color: white;
+    color: black;
+}
+.container{
+    transition: margin-left 0.7s;
+}
+.searchbar{
+    position: relative;
+    width:300px;
+    height:5vh;
+    border-radius: 10px;
+    background-color:whitesmoke;
+    border: none;
+    font-size:18px;
+    font-family: "poppins" ,sans-serif;
+    padding:15px ;
+    padding-left: 35px;
+}
+.search_bar{
+    position:relative;
+}
+.search_bar ion-icon{
+    position:absolute;
+    left: 10px;
+    top: 7px;
+}
+.search_bar{
+    text-align: center;
+}
+.search{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ham{
+    font-size: 2em;
+    cursor: pointer;
+}
+.iconsearch{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.searchbar:hover{
+    outline: none;
+}
+.sideicons{
+    margin-top: 20px;
+    margin-right: 20px;
+    display:flex;
+    justify-content:flex-end;
+ }
+ .dash1{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 1em;
+     padding:30px;
+     width: 100%;
+
+ }
+ .card{
+     box-shadow: 0 7px 25px rgb(0,0,0,0.08);
+     border-radius: 15px;
+     background:white;
+     padding:20px;
+ }
+ .card .numbers{
+     color:rgb(29, 212, 29);
+     font-weight:500;
+     font-size: 2em;
+     }
+     .card .cardname{
+         color: gray;
+     }
+ .dash1 .card:hover{
+     transition: 0.5s;
+     background:rgb(29, 212, 29);
+     }
+     .dash1 .card:hover .numbers,
+     .dash1 .card:hover .cardname{
+         color: white;
+
+     }
+     /* styling for tables  */
+     .center{
+        padding: 20px;
+        display: grid;
+        grid-gap: 1.2em;
+        grid-template-columns: 2fr 1fr;
+    }
+     .center .tables {
+         padding: 10px;
+         border-radius: 15px;
+         margin-top: 10px;
+         display: grid;
+         /* grid-column: 2fr; */
+         border-collapse: collapse;
+        box-shadow: 0 7px 25px rgb(0,0,0,0.08);
+      }
+      .tables table{
+          border-collapse: collapse;
+      }
+     .tables  th, td {
+          color:green;
+        text-align: left;
+        padding: 8px;
+      }
+      .tables th{
+          /* width: 30%; */
+          background-color: rgb(29, 212, 29);
+      }
+      .tables tr:nth-child(odd){
+          background-color:whitesmoke;
+      }
+      .users{
+          display: grid;
+          border-radius: 15px;
+          padding: 20px;
+          background-color: white;
+          /* -webkit-box-shadow: 5px 5px 23px 7px rgba(0,0,0,0.32);  */
+          box-shadow: 5px 5px 10px 7px rgba(0,0,0,0.08);
+      }
+      .users h2{
+          color:rgb(29, 212, 29) ;
+      }
+      .users th:nth-child(1){
+          background-color:rgb(29, 212, 29);
+          border-bottom-left-radius: 15px;
+          border-top-left-radius: 15px;
+      }
+      .users th{
+          background-color: gray;
+      }
+      .users th,td{
+          text-align: left;
+          padding:10px;
+      }
+      .users1{
+          border-collapse: collapse;
+      }
+      .users td{
+          /* padding: 10px; */
+          border-bottom:1px solid gray;
+      }
+      
+@media screen and (max-width:720px) {
+    .users table{
+        width: 100%;
+    }
+    .dash1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .center{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:992px) {
+    .dash1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .center{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} 
+      
+
