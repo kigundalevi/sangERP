@@ -214,7 +214,14 @@ h1{
           border-bottom:1px solid gray;
       }
       
-@media screen and (max-width:720px) {
+/* styling for the expense page */
+ 
+    #h{
+        color:rgb(29, 212, 29) ;
+    }
+
+
+@media screen and (max-width:572px) {
     .users table{
         width: 100%;
     }

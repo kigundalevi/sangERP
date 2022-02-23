@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1 id="h">expense input :</h1>
+    <table>
+        <tr>
+            <th>Block</th>
+            <th>Diesel <small>(litres)</small></th>
+            <th>Seeds <small>(per kg)</small></th>
+            <th>Fertilizer&pesticides <small>(per kg)</small></th>
+        </tr>
+        <tr>
+            <td>
+                <select id="blocks">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                    <option value="1">6</option>
+                    <option value="1">7</option>
+                    <option value="1">8</option>
+                    <option value="1">9</option>
+                    <option value="1">10</option>
+                    <option value="1">11</option>
+                    <option value="1">13</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" id="diesel" class="exp" required/>
+            </td>
+            <td>
+                <input type="number" id="Seeds" class="exp" required/>
+            </td>
+            <td>
+                <input type="number" id="fert" class="exp" required/>
+            </td>
+        </tr>
+
+    </table>
+    <script src="app.js"/>
+</body>
+</html>
